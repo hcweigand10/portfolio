@@ -1,14 +1,14 @@
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
-import Home from "./pages/Home";
-import About from "./pages/About";
-import Project from "./pages/Project";
+import Home from "./components/Home";
+import About from "./components/About";
+import Project from "./components/Project";
+import 'bootstrap/dist/css/bootstrap.min.css';
+
 
 function App() {
   return (
     <>
       <Router>
-        <Link to="/">Go Home</Link>
-        <Link to="/about">about page</Link>
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />

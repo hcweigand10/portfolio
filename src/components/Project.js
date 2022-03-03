@@ -5,7 +5,7 @@ export default function Project() {
     const params = useParams()
     return (
         <div>
-        <h1>page for {params.project}</h1>
+            <h1>page for {params.project}</h1>
         </div>
     )
 }
