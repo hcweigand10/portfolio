@@ -1,0 +1,163 @@
+/* color variables  */
+:root {
+  --pink: rgb(245, 143, 160);
+  --light: rgba(255, 255, 255, 0.884);
+  --grey: rgba(255, 255, 255, 0.63);
+  --dark: rgb(0,0,0);
+  --blue: #01cdfe;
+}
+
+/* navbar styling  */
+.navy {
+  color: var(--light);
+  text-decoration: none;
+  font-size: 20px;
+  padding: 5px;
+}
+
+.navy:hover {
+  border-bottom: 2px solid var(--pink);
+  color: var(--pink);
+}
+
+.nav-item-custom {
+  width: 25%;
+  text-align: center;
+  margin-top: 2vh;
+  margin-bottom: 5vh;
+}
+
+.nav-item-custom-1 {
+  border-left: 2px solid white;
+}
+
+#root {
+  background-color: var(--dark);
+}
+
+
+/* home styling  */
+.container-main {
+  background-color: var(--dark);
+  color: var(--light);
+  min-height: 88vh;
+}
+
+.title {
+  text-align: center;
+  color: var(--light);
+}
+
+.subtitle {
+  text-align: center;
+  color: var(--grey);
+}
+
+.home-main {
+  margin: 30vh;
+}
+
+.page-title {
+  margin-bottom: 5vh;
+  text-align: center;
+}
+
+
+/* about styling */
+.container-about p {
+  font-size: 20px;
+}
+
+.img-fluid {
+  margin-top: 20px;
+  padding-right: 20px;
+  max-height: 94%;
+}
+
+
+/* work styling  */
+#cnt1 {            
+  background-color: var(--dark);
+  width:90%;
+  margin-bottom:70px;
+}
+
+.feature{
+  padding: 20px 0;
+}
+
+.feature h2 {
+  text-align: center;
+}
+
+.project-description {
+  text-decoration: none;
+  color: var(--light);
+}
+
+.project {
+  padding-bottom: 50px;
+  border-bottom: 1px solid var(--light);
+}
+
+.buttons {
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.btn-custom {
+  color: var(--light);
+  padding: 8px;
+  border-radius: 4px;
+  text-decoration: none;
+}
+
+.btn-pink {
+  background-color: var(--pink);
+}
+
+.btn-blue {
+  background-color: var(--blue);
+}
+
+.btn-custom:hover {
+  color: var(--grey);
+}
+
+.feature > div > div{
+ padding: 10px;
+ border: 1px solid transparent;
+ border-radius: 4px;
+ transition: 0.2s;
+}
+
+
+
+/* footer styling */
+.container-footer {
+  color: var(--light);
+  background-color: var(--dark);
+  text-align: center;
+  min-height: 14vh;
+}
+
+.row-footer {
+  text-align: center;
+  margin: 0 auto;
+  display: inline-flex;
+}
+
+.footer-img {
+  height: 90px;
+  margin-left: 20px;
+}
+
+.footer-img-email {
+  height: 110px;
+  width: 110px;
+}
+
+.footer-img:hover, .footer-img-email:hover {
+  opacity: 0.7;
+}

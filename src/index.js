@@ -1,17 +1,9 @@
+import './css/App.css'
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
 import App from './App';
-import reportWebVitals from './reportWebVitals';
+import 'bootstrap/dist/css/bootstrap.css';
 
-ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById('root')
-);
-
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+// background color for whole site here 
+document.body.style = 'height: 600px; background-image: url(images/bp-wallpaper.gif); background-size: 1673px 874px; background-position: 40% 5%';
+ReactDOM.render(<App/>,document.getElementById('root'));
