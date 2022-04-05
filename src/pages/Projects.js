@@ -18,12 +18,7 @@ export default function Projects() {
                                   <h2>Browser Party</h2>
                                   <h5>Summary</h5>
                                     <p>
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam consequat, urna id vestibulum viverra, 
-                                        tellus felis rutrum erat, sit amet ultrices orci urna sit amet nunc. 
-                                        Fusce ut fringilla sem. Curabitur eget est vitae nulla eleifend ullamcorper et laoreet odio. 
-                                        Duis condimentum feugiat sollicitudin. Sed non lacinia turpis. 
-                                        Proin gravida turpis consequat porta condimentum. 
-                                        Nam consequat ultricies elit nec consectetur.                        
+                                        Browser Party is fully browser-based multiplayer party game platform that allows users to compete and chat with each other in real time using socket.io and React. This project was an absolute joy to make and I look forward to making more and more accessible games over the years to come.
                                     </p>
                                   <h5>Awards</h5>
                                     <ul>
@@ -41,12 +36,7 @@ export default function Projects() {
                                   <h2>Skyfall Travel</h2>
                                   <h5>Summary</h5>
                                     <p>
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam consequat, urna id vestibulum viverra, 
-                                        tellus felis rutrum erat, sit amet ultrices orci urna sit amet nunc. 
-                                        Fusce ut fringilla sem. Curabitur eget est vitae nulla eleifend ullamcorper et laoreet odio. 
-                                        Duis condimentum feugiat sollicitudin. Sed non lacinia turpis. 
-                                        Proin gravida turpis consequat porta condimentum. 
-                                        Nam consequat ultricies elit nec consectetur.                        
+                                    SkyFall Travel is full-stack application that allows users to plan and save future trips, including things like dates, stops, and budgets. Made with a MYSQL database and a bootstrap front-end.
                                     </p>
                                   <h5>Awards</h5>
                                     <ul>
@@ -67,12 +57,7 @@ export default function Projects() {
                                   <h2>GeoQuizzr</h2>
                                   <h5>Summary</h5>
                                     <p>
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam consequat, urna id vestibulum viverra, 
-                                        tellus felis rutrum erat, sit amet ultrices orci urna sit amet nunc. 
-                                        Fusce ut fringilla sem. Curabitur eget est vitae nulla eleifend ullamcorper et laoreet odio. 
-                                        Duis condimentum feugiat sollicitudin. Sed non lacinia turpis. 
-                                        Proin gravida turpis consequat porta condimentum. 
-                                        Nam consequat ultricies elit nec consectetur.                        
+                                        GeoQuizzr is a simple geography trivia site that will test you with needlessly difficult questions about our world's borders. This was my first coding project that I felt proud of, despite its lack of complexity. 
                                     </p>
                                     <div className='buttons'>
                                         <a href="https://hcweigand10.github.io/Geoquizzr/" className="btn-custom btn-pink lower" target="_blank" rel="noreferrer">Deployed Site</a>
