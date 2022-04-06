@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 export default function Navbar() {
   return (
         <nav className="navbar navbar-expand-lg navbar-light navbar-custom container">
-            <ul className="navbar-nav w-100">
+            <ul className="w-100 nav-ul">
                 <li className="nav-item-custom">
                     <Link className="navy" to="/">Home</Link>
                 </li>

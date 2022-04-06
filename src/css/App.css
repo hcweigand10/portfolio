@@ -11,15 +11,23 @@
 .navy {
   color: var(--light);
   text-decoration: none;
-  font-size: 20px;
+  font-size: 22px;
   padding: 5px;
 }
 
 .navy:hover {
   border-bottom: 2px solid var(--pink);
+  margin-top: -10px;
+  transition: 0.2s;
   color: var(--pink);
 }
 
+.nav-ul {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  list-style-type: none;
+}
 .nav-item-custom {
   width: 25%;
   text-align: center;
@@ -194,4 +202,6 @@
 
 .footer-img:hover, .footer-img-email:hover {
   opacity: 0.7;
+  margin-top: -10px;
+  transition: 0.2s;
 }
