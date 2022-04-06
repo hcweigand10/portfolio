@@ -11,7 +11,7 @@ export default function About() {
                     <div className="col-md-4">
                         <img src={profPic} className="img-fluid rounded-start" alt="profile-pic"/>
                     </div>
-                    <div className="col-md-8">
+                    <div className="col-md-8 col-sm-12">
                         <div className="card-body">
                         <p className="card-text">
                             I am a born and raised Seattlite and recent University of Washington graduate. I only started coding in late 2021 but am excited to pursue web development and software engineering as both a career and a hobby. </p>
