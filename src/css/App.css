@@ -1,7 +1,7 @@
 /* color variables  */
 :root {
   --pink: rgb(245, 143, 160);
-  --light: rgba(255, 255, 255, 0.884);
+  --light: rgb(255, 255, 255);
   --grey: rgba(255, 255, 255, 0.63);
   --dark: rgb(0,0,0);
   --blue: #01cdfe;
@@ -33,7 +33,7 @@
   width: 25%;
   text-align: center;
   margin-top: 2vh;
-  margin-bottom: 5vh;
+  margin-bottom: 2vh;
 }
 
 .nav-item-custom-1 {
@@ -72,15 +72,22 @@
 }
 
 .page-title {
-  margin-bottom: 5vh;
+  color: var(--dark);
+  padding: 5vh;
   text-align: center;
   font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 
 /* about styling */
+.about-page {
+  background-color: var(--light);
+  padding-bottom: 40px;
+}
+
 .container-about p {
   font-size: 20px;
+  color: var(--dark);
 }
 
 .img-fluid {
@@ -91,8 +98,12 @@
 
 
 /* work styling  */
+.projects-page {
+  background-color: var(--light);
+}
+
 #cnt1 {            
-  background-color: var(--dark);
+  background-color: var(--light);
   width:90%;
   margin-bottom:70px;
 }
@@ -107,15 +118,15 @@
 
 .project-description {
   text-decoration: none;
-  color: var(--light);
+  color: var(--dark);
 }
 
 .project {
   padding-bottom: 50px;
-  border-bottom: 1px solid var(--light);
+  border-bottom: 1px solid var(--dark);
 }
 
-.project-p {
+.project-p, .project li {
   font-size: 18px;
 }
 
@@ -157,17 +168,24 @@
 
 
 /* resume styling */
+.resume-page {
+  background-color: var(--light);
+  color: var(--dark);
+  padding-bottom: 40px;
+  margin-bottom: 40px;
+}
+
 .container-resume {
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 20px;
+  margin-bottom: 60px;
 }
 
 .objective {
   padding-top: 20px;
   padding-bottom: 20px;
-  border-top: 2px solid var(--light);
-  border-bottom: 2px solid var(--light);
+  border-top: 2px solid var(--dark);
+  border-bottom: 2px solid var(--dark);
 }
 
 .resume-subtitle {

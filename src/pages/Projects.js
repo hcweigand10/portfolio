@@ -6,7 +6,7 @@ import GeoQuizzr from "../assets/images/Geoquizzr.png"
 export default function Projects() {
     const [project, setProject] = useState("")
     return (
-        <div>
+        <div className='projects-page'>
             {project === "" ? (
                 <div>
                     <h1 className='page-title'>My Projects</h1>
