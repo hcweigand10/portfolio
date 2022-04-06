@@ -53,6 +53,11 @@
   color: var(--grey);
 }
 
+.source {
+  font-style: italic;
+  text-align: center;
+}
+
 .home-main {
   margin: 30vh;
 }
@@ -60,6 +65,7 @@
 .page-title {
   margin-bottom: 5vh;
   text-align: center;
+  font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 
@@ -100,6 +106,14 @@
   border-bottom: 1px solid var(--light);
 }
 
+.project-p {
+  font-size: 18px;
+}
+
+.project-title, .project-subtitle {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
 .buttons {
   margin-top: 50px;
   display: flex;
@@ -133,6 +147,26 @@
 }
 
 
+/* resume styling */
+.container-resume {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.objective {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border-top: 2px solid var(--light);
+  border-bottom: 2px solid var(--light);
+}
+
+.resume-subtitle {
+  margin-top: 25px;
+}
+
+.resume-item {
+  font-size: 18px;
+}
 
 /* footer styling */
 .container-footer {

@@ -15,12 +15,12 @@ export default function Projects() {
                             <div className="row col-md-12 mb-4 project">
                                 <img className="col-md-5" src={BrowserLogo} alt="Browser Party Logo"/>
                                 <div className="col-md-7 project-description">
-                                  <h2>Browser Party</h2>
-                                  <h5>Summary</h5>
-                                    <p>
+                                  <h2 className="project-title">Browser Party</h2>
+                                  <h4 className="project-subtitle">Summary</h4>
+                                    <p className="project-p">
                                         Browser Party is fully browser-based multiplayer party game platform that allows users to compete and chat with each other in real time using socket.io and React. This project was an absolute joy to make and I look forward to making more and more accessible games over the years to come.
                                     </p>
-                                  <h5>Awards</h5>
+                                  <h4 className="project-subtitle">Awards</h4>
                                     <ul>
                                         <li>Best Functionality</li>
                                     </ul>
@@ -33,12 +33,12 @@ export default function Projects() {
 
                             <div className="row col-md-12 mb-4 mt-5 project">
                                 <div className="col-md-7 project-description">
-                                  <h2>Skyfall Travel</h2>
-                                  <h5>Summary</h5>
-                                    <p>
+                                  <h2 className="project-title">Skyfall Travel</h2>
+                                  <h4 className="project-subtitle">Summary</h4>
+                                    <p className="project-p">
                                     SkyFall Travel is full-stack application that allows users to plan and save future trips, including things like dates, stops, and budgets. Made with a MYSQL database and a bootstrap front-end.
                                     </p>
-                                  <h5>Awards</h5>
+                                  <h4 className="project-subtitle">Awards</h4>
                                     <ul>
                                         <li>People's Choice (Best Overall)</li>
                                         <li>Best Functionality</li>
@@ -51,13 +51,13 @@ export default function Projects() {
                                 <img className="col-md-5" src={Skyfall} alt="Skyfall screenshot"/>
                             </div>
 
-                            <div className="row col-md-12 mb-4 mt-5 project">
+                            <div className="row col-md-12 mb-4 mt-5 ">
                                 <img className="col-md-5" src={GeoQuizzr} alt="GeoQuizzr Screenshot"/>
                                 <div className="col-md-7 project-description">
-                                  <h2>GeoQuizzr</h2>
-                                  <h5>Summary</h5>
-                                    <p>
-                                        GeoQuizzr is a simple geography trivia site that will test you with needlessly difficult questions about our world's borders. This was my first coding project that I felt proud of, despite its lack of complexity. 
+                                  <h2 className="project-title">GeoQuizzr</h2>
+                                  <h4 className="project-subtitle">Summary</h4>
+                                    <p className="project-p">
+                                        GeoQuizzr is a simple geography trivia site that will test you with needlessly difficult questions about our world's borders. This was my first coding project that I felt proud of!
                                     </p>
                                     <div className='buttons'>
                                         <a href="https://hcweigand10.github.io/Geoquizzr/" className="btn-custom btn-pink lower" target="_blank" rel="noreferrer">Deployed Site</a>
