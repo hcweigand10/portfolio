@@ -3,7 +3,7 @@ import React from 'react'
 
 export default function Resume() {
     return (
-        <div className='container-resume col-md-6 col-lg-5'>
+        <div className='container-resume col-md-6 col-lg-5 col-sm-11'>
             <h1 className='page-title'>Resume</h1>
             <h6 className='objective'>
             Full Stack Web Developer with a background in Civil Engineering and leadership positions. Seeking a full-time software engineering position with an ethical and sustainable organization.
