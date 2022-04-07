@@ -20,7 +20,7 @@ export default function About() {
                                 During the 2021-22 winter, I enrolled in the University of Washington's Full-Stack coding bootcamp, fully diving into this new chapter. Thanks to the diligence of my professor and TAs (shoutout Joe Rehfuss!) I came away with not only a foundation of web development skills, but also experience with professional workflows and project management. Out of all we learned, I think I am most excited to learn more about everything related to React, MVC structures, and of course my first love: vanilla JavaScript.
                             </p>
                             <p>
-                                Away from the computer, I enjoy watching and playing sports, playing video games way too competitively, and (attempting to) win pub trivia competitions. But most importantly, I want to travel, and here's to hoping that a tech career can open that door for me :)
+                                Away from the computer, I enjoy watching and playing sports, playing video games way too competitively, and (attempting to) win pub trivia competitions. But most importantly, I want to travel, and here's to hoping that a tech career can open that door for me. :)
                             </p>
                             </div>
                         </div>
