@@ -1,4 +1,4 @@
-import React, {useState, useEffect} from 'react'
+import React, {useState} from 'react'
 import $ from 'jquery'
 
 export default function Home() {
@@ -26,8 +26,6 @@ export default function Home() {
     const update = async (result) => {
         setFact(result)
     }
-    
-    const wait = (timeToDelay) => new Promise((resolve) => setTimeout(resolve, timeToDelay));
 
     const start = async () => {
         if (init) {

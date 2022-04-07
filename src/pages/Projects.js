@@ -4,10 +4,8 @@ import Skyfall from "../assets/images/Skyfall.png"
 import GeoQuizzr from "../assets/images/Geoquizzr.png"
 
 export default function Projects() {
-    const [project, setProject] = useState("")
     return (
         <div className='projects-page'>
-            {project === "" ? (
                 <div>
                     <h1 className='page-title'>My Projects</h1>
                     <div className="container" id="cnt1">
@@ -70,29 +68,6 @@ export default function Projects() {
                     </div>
 
                 </div>
-
-            ) :null}
-            {project === "Browser Party" ? (
-                <h1>{project}</h1>
-
-            ) :null}
-            {project === "Skyfall Travel" ? (
-                <h1>{project}</h1>
-
-            ) :null}
-            {project === "GeoQuizzr" ? (
-                <h1>{project}</h1>
-
-            ) :null}
-            <div>
-
-            </div>
-            <div>
-
-            </div>
-            <div>
-
-            </div>
         </div>
     )
 }
