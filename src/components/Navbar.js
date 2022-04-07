@@ -3,7 +3,8 @@ import { Link } from 'react-router-dom';
 
 export default function Navbar() {
   return (
-        <nav className="navbar navbar-expand-lg navbar-light navbar-custom container">
+      <div className="navbar-container">
+        <nav className="row container">
             <ul className="w-100 nav-ul">
                 <li className="nav-item-custom">
                     <Link className="navy" to="/">Home</Link>
@@ -19,5 +20,6 @@ export default function Navbar() {
                 </li>
             </ul>
         </nav>
+      </div>
   )
 }

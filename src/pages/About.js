@@ -4,7 +4,7 @@ import profPic from '../assets/images/Prof_Pic.JPG'
 
 export default function About() {
     return (
-        <div className='about-page'>
+        <div className='about-page page'>
             <div className='container container-about'>
                 <h1 className='page-title'>Me in 30 seconds</h1>
                 <section className="m-4" key="about-me">
@@ -14,7 +14,7 @@ export default function About() {
                         </div>
                         <div className="col-md-8 col-sm-12">
                             <div className="card-body">
-                            <p className="card-text">
+                            <p className="plain-text">
                                 I am a born and raised Seattlite and recent University of Washington graduate. I only started coding in late 2021 but am excited to pursue web development and software engineering as both a career and a hobby. </p>
                             <p>
                                 During the 2021-22 winter, I enrolled in the University of Washington's Full-Stack coding bootcamp, fully diving into this new chapter. Thanks to the diligence of my professor and TAs (shoutout Joe Rehfuss!) I came away with not only a foundation of web development skills, but also experience with professional workflows and project management. Out of all we learned, I think I am most excited to learn more about everything related to React, MVC structures, and of course my first love: vanilla JavaScript.

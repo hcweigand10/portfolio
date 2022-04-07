@@ -3,7 +3,7 @@ import React from 'react'
 
 export default function Resume() {
     return (
-        <div className='resume-page'>
+        <div className='resume-page page'>
             <div className='container-resume col-md-6 col-lg-5 col-sm-11 container'>
                 <h1 className='page-title'>Resume</h1>
                 <h6 className='objective'>
