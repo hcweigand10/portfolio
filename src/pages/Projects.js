@@ -1,4 +1,4 @@
-import React, {useState, useEffect} from 'react'
+import React from 'react'
 import BrowserLogo from "../assets/images/Browser-Party.png"
 import Skyfall from "../assets/images/Skyfall.png"
 import GeoQuizzr from "../assets/images/Geoquizzr.png"
