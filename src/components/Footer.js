@@ -13,12 +13,12 @@ export default function Footer() {
                         <img className="footer-img" src={github} alt="github logo"/>
                     </div>
                 </a>
-                <a className='' href='https://www.linkedin.com/in/henryweigand/' target="_blank" rel="noreferrer">
+                <a className='' href='mailto:henryweigand10@gmail.com' target="_blank" rel="noreferrer">
                     <div>
                         <img className="footer-img" src={email} alt="linkedin logo"/>
                     </div>
                 </a>
-                <a className='' href='mailto:henryweigand10@gmail.com' target="_blank" rel="noreferrer">
+                <a className='' href='https://www.linkedin.com/in/henryweigand/' target="_blank" rel="noreferrer">
                     <div>
                         <img className="footer-img" src={linkedin} alt="email logo"/>
                     </div>                            
