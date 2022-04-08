@@ -23,7 +23,9 @@ export default function Projects() {
 
                                                 <div class="row">
                                                     <div>
-                                                        <p className="plain-text">Browser Party is fully browser-based multiplayer party game platform that allows users to compete and chat with each other in real time using socket.io and React. This project was an absolute joy to make and I look forward to making more and more accessible games over the years to come.</p>
+                                                        <p className="plain-text">Browser Party is fully browser-based multiplayer party game platform that allows users to compete and chat with each other in real time using socket.io and React. This project was an absolute joy to make and I look forward to making more and more accessible games over the years to come. <br/>
+                                                        Awards: Best Functionality
+                                                        </p>
                                                     </div>
                                                 </div>
                                                 <p className='mt-4 project-buttons'>
@@ -48,12 +50,14 @@ export default function Projects() {
 
                                                 <div class="row">
                                                     <div>
-                                                        <p className="plain-text">Browser Party is fully browser-based multiplayer party game platform that allows users to compete and chat with each other in real time using socket.io and React. This project was an absolute joy to make and I look forward to making more and more accessible games over the years to come.</p>
+                                                        <p className="plain-text">Skyfall Travel was my first full-stack application. It utilizes a MYSQL database to enable users to plan, and save future trips to their account, including things like stops, dates, and budget breakdowns. <br/>
+                                                        Awards: People's Choice (Best Overall) and Best Functionality
+                                                        </p>
                                                     </div>
                                                 </div>
                                                 <p className='mt-4 project-buttons'>
-                                                    <a href="https://browser-party.herokuapp.com/" target="_blank" rel="noreferrer" className="btn-1 mb-2 py-3 px-4">Deployed Site</a>
-                                                    <a href="https://github.com/kingnolds/Browser-Party" target="_blank" rel="noreferrer" className="btn-2 mb-2 py-3 px-4">Github Repo</a>
+                                                    <a href="https://skyfall-travel.herokuapp.com/" target="_blank" rel="noreferrer" className="btn-1 mb-2 py-3 px-4">Deployed Site</a>
+                                                    <a href="https://github.com/hcweigand10/SkyFall-Travel" target="_blank" rel="noreferrer" className="btn-2 mb-2 py-3 px-4">Github Repo</a>
                                                 </p>
                                             </div>
                                             <img class="col-lg-8" src={SkyfallPic} alt="SkyfallPic"/>
@@ -76,8 +80,8 @@ export default function Projects() {
                                                     </div>
                                                 </div>
                                                 <p className='mt-4 project-buttons'>
-                                                    <a href="https://skyfall-travel.herokuapp.com/" target="_blank" rel="noreferrer" className="btn-1 mb-2 py-3 px-4">Deployed Site</a>
-                                                    <a href="https://github.com/kingnolds/Browser-Party" target="_blank" rel="noreferrer" className="btn-2 mb-2 py-3 px-4">Github Repo</a>
+                                                    <a href="https://hcweigand10.github.io/Geoquizzr/" target="_blank" rel="noreferrer" className="btn-1 mb-2 py-3 px-4">Deployed Site</a>
+                                                    <a href="https://github.com/hcweigand10/Geoquizzr" target="_blank" rel="noreferrer" className="btn-2 mb-2 py-3 px-4">Github Repo</a>
                                                 </p>
                                             </div>
                                             <img class="col-lg-8" src={GeoQuizzrPic} alt="GeoQuizzr Pic"/>
