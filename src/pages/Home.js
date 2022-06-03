@@ -47,7 +47,7 @@ export default function Home() {
     return (
         <div>
             
-            <main className="container home-main">
+            <main className="container home-main page">
                 <div>
                     <h1 className='title'>Hey there, I'm <span className='name-span'>Henry Weigand</span></h1>
                     <h4 className='subtitle'>Full-Stack Developer</h4>

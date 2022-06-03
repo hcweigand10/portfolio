@@ -2,97 +2,78 @@ import React from 'react'
 import BrowserPic from "../assets/images/Browser.png"
 import SkyfallPic from "../assets/images/Skyfall1.png"
 import GeoQuizzrPic from "../assets/images/GeoQuizzrPic.png"
+import FakeYoutubePic from "../assets/images/fakeYoutube.png"
+import Project from "../components/Project"
 
 export default function Projects() {
+    
+    const projects = {
+        BrowserParty: {
+            description: "Browser Party is fully browser-based multiplayer party game platform that allows users to compete and chat with each other in real time using socket.io and React. This project was an absolute joy to make and I look forward to making more and more accessible games over the years to come.",
+            awards: "Awards: Best Functionality",
+            liveUrl: "https://browser-party.herokuapp.com/",
+            github: "https://github.com/kingnolds/Browser-Party",
+        },
+        Skyfall: {
+            description: "Skyfall Travel was my first full-stack application. It utilizes a MYSQL database to enable users to plan, and save future trips to their account, including things like stops, dates, and budget breakdowns.",
+            awards: "Awards: Best Overall and Best Functionality",
+            liveUrl: "https://skyfall-travel.herokuapp.com/",
+            github: "https://github.com/hcweigand10/SkyFall-Travel",
+        },
+        FakeYoutube: {
+            description: "I made this 'fake youtube' site using Youtube's open API, react class and function based components, and semantic UI styling.",
+            awards: "",
+            liveUrl: "https://main--majestic-mandazi-298247.netlify.app/",
+            github: "https://github.com/hcweigand10/fake-youtube",
+        },
+        GeoQuizzr: {
+            description: "GeoQuizzr is a simple geography trivia site that will test you with needlessly difficult questions about our world's borders. This was my first coding project that I felt proud of!",
+            awards: "",
+            liveUrl: "https://hcweigand10.github.io/Geoquizzr/",
+            github: "https://github.com/hcweigand10/Geoquizzr",
+        },
+    }
+    
     return (
         <div className='projects-page page'>
             <div>
-               <div class="container">
-				<div class="row">
-					<div class="col-md-12 text-center">
-						<h1 class="heading-section m4-5 page-title">My Projects</h1>
-					</div>
-					<div class="col-md-12">
-						<div class="featured-carousel owl-carousel mb-5">
-							<div class="item browser-party">
-								<div class="work-wrap d-md-flex">
-                                    <div class="text text-left text-lg-right p-4 px-xl-5 d-flex align-items-center">
-                                        <div class="desc row w-100">
-                                            <div className='col-lg-4'>
-                                                <h2 class="mb-4">Browser Party</h2>
-
-                                                <div class="row">
-                                                    <div>
-                                                        <p className="plain-text">Browser Party is fully browser-based multiplayer party game platform that allows users to compete and chat with each other in real time using socket.io and React. This project was an absolute joy to make and I look forward to making more and more accessible games over the years to come. <br/>
-                                                        Awards: Best Functionality
-                                                        </p>
-                                                    </div>
-                                                </div>
-                                                <p className='mt-4 project-buttons'>
-                                                    <a href="https://browser-party.herokuapp.com/" target="_blank" rel="noreferrer" className="btn-1 mb-2 py-3 px-4">Deployed Site</a>
-                                                    <a href="https://github.com/kingnolds/Browser-Party" target="_blank" rel="noreferrer" className="btn-2 mb-2 py-3 px-4">Github Repo</a>
-                                                </p>
-                                            </div>
-                                            <img class="col-lg-8" src={BrowserPic} alt="BrowserPic"/>
-                                        </div>
-                                    </div>
-								</div>
-							</div>
-                            <br/>
-                            <hr/>
-                            <br/>
-							<div class="item skyfall">
-								<div class="work-wrap d-md-flex">
-									<div class="text text-left text-lg-right p-4 px-xl-5 d-flex align-items-center">
-                                        <div class="desc row w-100">
-                                            <div className='col-lg-4'>
-                                                <h2 class="mb-4">Skyfall Travel</h2>
-
-                                                <div class="row">
-                                                    <div>
-                                                        <p className="plain-text">Skyfall Travel was my first full-stack application. It utilizes a MYSQL database to enable users to plan, and save future trips to their account, including things like stops, dates, and budget breakdowns. <br/>
-                                                        Awards: People's Choice (Best Overall) and Best Functionality
-                                                        </p>
-                                                    </div>
-                                                </div>
-                                                <p className='mt-4 project-buttons'>
-                                                    <a href="https://skyfall-travel.herokuapp.com/" target="_blank" rel="noreferrer" className="btn-1 mb-2 py-3 px-4">Deployed Site</a>
-                                                    <a href="https://github.com/hcweigand10/SkyFall-Travel" target="_blank" rel="noreferrer" className="btn-2 mb-2 py-3 px-4">Github Repo</a>
-                                                </p>
-                                            </div>
-                                            <img class="col-lg-8" src={SkyfallPic} alt="SkyfallPic"/>
-                                        </div>
-									</div>
-								</div>
-							</div>
-                            <br/>
-                            <hr/>
-                            <br/>
-							<div class="item geoquizzer">
-								<div class="work-wrap d-md-flex">
-									<div class="text text-left text-lg-right p-4 px-xl-5 d-flex align-items-center">
-                                        <div class="desc row w-100">
-                                            <div className='col-lg-4'>
-                                                <h2 class="mb-4">GeoQuizzr</h2>
-                                                <div class="row">
-                                                    <div>
-                                                        <p className="plain-text">GeoQuizzr is a simple geography trivia site that will test you with needlessly difficult questions about our world's borders. This was my first coding project that I felt proud of!</p>
-                                                    </div>
-                                                </div>
-                                                <p className='mt-4 project-buttons'>
-                                                    <a href="https://hcweigand10.github.io/Geoquizzr/" target="_blank" rel="noreferrer" className="btn-1 mb-2 py-3 px-4">Deployed Site</a>
-                                                    <a href="https://github.com/hcweigand10/Geoquizzr" target="_blank" rel="noreferrer" className="btn-2 mb-2 py-3 px-4">Github Repo</a>
-                                                </p>
-                                            </div>
-                                            <img class="col-lg-8" src={GeoQuizzrPic} alt="GeoQuizzr Pic"/>
-                                        </div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
+               <div className="container">
+                    <div className="row">
+                        <div className="col-md-12 text-center">
+                        <h1 className='ui header m-3' style={{textAlign: "center"}}>My Work</h1>
+                        </div>
+                        <div className="col-md-12">
+                            <div className="featured-carousel owl-carousel mb-5">
+                                <Project title="Browser Party" 
+                                projectObj={projects.BrowserParty}
+                                pic={BrowserPic}
+                                />
+                                <br/>
+                                <hr/>
+                                <br/>
+                                
+                                <Project title="Skyfall Travel" 
+                                projectObj={projects.Skyfall}
+                                pic={SkyfallPic}
+                                />
+                                <br/>
+                                <hr/>
+                                <br/>
+                                <Project title="Fake Youtube" 
+                                projectObj={projects.FakeYoutube}
+                                pic={FakeYoutubePic}
+                                />
+                                <br/>
+                                <hr/>
+                                <br/>
+                                <Project title="GeoQuizzr" 
+                                projectObj={projects.GeoQuizzr}
+                                pic={GeoQuizzrPic}
+                                />
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     )

@@ -5,8 +5,12 @@ import linkedin from '../assets/images/linkedin4.png'
 
 
 export default function Footer() {
+
     return (
-        <div className='container-footer'>
+        <div className='container-footer mt-3'>
+            <div style={{marginLeft: "8px"}}>
+                <h4>Contact:</h4>
+            </div>
             <div className='row-footer'>
                 <a className='' href='https://github.com/hcweigand10' target="_blank" rel="noreferrer">
                     <div>

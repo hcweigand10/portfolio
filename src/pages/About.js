@@ -5,8 +5,8 @@ import profPic from '../assets/images/Prof_Pic.JPG'
 export default function About() {
     return (
         <div className='about-page page'>
-            <div className='container container-about'>
-                <h1 className='page-title'>Me in 30 seconds</h1>
+            <div className='container container-about' style={{maxWidth: "1000px"}}>
+                <h1 className='ui header m-3' style={{textAlign: "center"}}>Me in 30 seconds</h1>
                 <section className="m-4" key="about-me">
                         <div className="row g-0">
                         <div className="col-md-4">

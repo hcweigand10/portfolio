@@ -1,25 +1,29 @@
-import React from "react";
+import React, {useState} from "react";
 import { Link } from 'react-router-dom';
 
-export default function Navbar() {
-  return (
-      <div className="navbar-container">
-        <nav className="navbar navbar-expand-lg navbar-light navbar-custom container">
-            <ul className="nav-ul">
-                <li className="nav-item-custom nav-item-custom-1">
-                    <Link className="navy" to="/">Home</Link>
-                </li>
-                <li className="nav-item-custom nav-item-custom-1">
-                    <Link className="navy" to="/about">About</Link>
-                </li>
-                <li className="nav-item-custom nav-item-custom-1">
-                    <Link className="navy" to="/my-work">Work</Link>
-                </li>
-                <li className="nav-item-custom nav-item-custom-2">
-                    <Link className="navy" to="/resume">Resume</Link>
-                </li>
-            </ul>
-        </nav>
-      </div>
+const Navbar = () => {
+    const [activePage, setActivePage] = useState("home")
+
+    const handlePageChage = (e,newpage) => {
+        e.preventDefault()
+        console.log(document.querySelector(`#${newpage}`).classList)
+        document.querySelector(`#${newpage}`).setAttribute("class", "ui item active")
+        document.querySelector(`#${activePage}`).setAttribute("class", "ui item")
+        setActivePage(newpage)
+    }
+
+    return (
+    // <!--Start: Nav  -->
+    <div className="ui fixed borderless menu">
+        
+        {/* <!--Start: Desktop Nav--> */}
+          <Link className="header ui item" key="home" to="/" onClick={() => {setActivePage("home")}}>Henry Weigand</Link>
+          <Link className={activePage === "about" ? "ui item active" : "ui item"} key="about" to="/about" onClick={() => {setActivePage("about")}}>About</Link>
+          <Link className={activePage === "work" ? "ui item active" : "ui item"} key="work" to="/work" onClick={() => {setActivePage("work")}}>Work</Link>          
+          <Link className={activePage === "resume" ? "ui item active" : "ui item"} key="resume" to="/resume" onClick={() => {setActivePage("resume")}}>Resume</Link>
+          
+        </div>
   )
 }
+
+export default Navbar

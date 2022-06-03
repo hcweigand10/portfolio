@@ -1,37 +1,140 @@
 import React from 'react'
 
+const Resume = () => {
 
-export default function Resume() {
     return (
-        <div className='resume-page page'>
-            <div className='container-resume container'>
-                <h1 className='page-title'>Resume</h1>
-                <h6 className='objective'>
-                Full Stack Web Developer with a background in Civil Engineering and leadership positions. Seeking a full-time software engineering position with an ethical and sustainable organization.
-                </h6>
-
-                <h3 className='resume-subtitle'>Education</h3>
-                <p><span className='resume-item'><strong>Boot Camp Certificate</strong>&nbsp;&nbsp;|&nbsp;&nbsp;University of Washington&nbsp;&nbsp;|&nbsp;&nbsp;Seattle, WA&nbsp;&nbsp;|&nbsp;&nbsp;2021 - 22 </span><br/>
-                <span>A 14-week intensive program focused on technical programming skills as well as exposure to industry workflows. (Learn more <a href="https://bootcamp.uw.edu/coding/" target="_blank" rel="noreferrer">here</a>)</span>
-                </p>
-                <p className='resume-item'><strong>Bachelor's of Science in Civil Engineering</strong>&nbsp;&nbsp;|&nbsp;&nbsp;University of Washington&nbsp;&nbsp;|&nbsp;&nbsp;Seattle, WA&nbsp;&nbsp;|&nbsp;&nbsp;2015 - 19</p>
-
-                <h3 className='resume-subtitle'>Technical Skills</h3>
-                <p className='resume-item'><strong>Languages:</strong>  JavaScript, HTML, MYSQL, CSS	<br/><strong>Tools/Applications:</strong>  React, Node, Express, Handlebars, MongoDB, Socket.io</p>
-
-                <h3 className='resume-subtitle'>Experience</h3>
-                <p><span className='resume-item'><strong>Math Tutor</strong>&nbsp;&nbsp;|&nbsp;&nbsp;Mathnasium Northwest&nbsp;&nbsp;|&nbsp;&nbsp;Seattle, WA&nbsp;&nbsp;|&nbsp;&nbsp;2019 - Current <br/></span>		
-                Have tutored over 100 K-12 students in all relevant math subjects, earning multiple pay raises.
-                </p>
-
-                <p><span className='resume-item'><strong>Engineering Intern </strong>&nbsp;&nbsp;|&nbsp;&nbsp;City of Kent Economic Development&nbsp;&nbsp;|&nbsp;&nbsp;Seattle, WA&nbsp;&nbsp;|&nbsp;&nbsp;2018<br/></span>
-                Worked with city engineers to create and plan new housing developments and other long-term growth projects in the rapidly growing city of Kent, Washington. 
-                </p>
-
-                <p><span className='resume-item'><strong>President</strong>&nbsp;&nbsp;|&nbsp;&nbsp;Alpha Epsilon Pi&nbsp;&nbsp;|&nbsp;&nbsp;Seattle, WA&nbsp;&nbsp;|&nbsp;&nbsp;2017 - 18<br/></span> 
-                Served as president for a year at Alpha Epsilon Pi's UW chapter. Was directly responsible for the wellbeing of over 60 members and our $180,000 annual budget while overseeing the directives of eight other executive board members. Also recruited 22 new members to the organization during the tenure.
-                </p>
-            </div>
+        <div className='page resume-id'>
+                <h1 className="ui header" style={{textAlign: "center"}}>Resume</h1>
+                <div className='ui grid container' style={{paddingTop: "3em", display: "flex", justifyContent: "center"}}>
+                    <div className='row resume-custom-row' >
+                        <div className='five wide column left' style={{borderRight: "solid lightgray 1px"}}>
+                            <div className='ui grid'>
+                                
+                                <div className='sixteen wide column' style={{paddingTop: "0px", paddingBottom: "0px"}}>
+                                    <h3 className='ui header' id="no-margin">Languages</h3>
+                                    <div className='ui grid stackable'>
+                                        <div className='eight wide column custom-left' id="no-pad">
+                                            <ul style={{listStyleType: "none", padding: "0px"}}>
+                                                <li className="contact-item">
+                                                JavaScript 
+                                                </li>
+                                                <li className="contact-item">
+                                                    Python
+                                                </li>
+                                                <li className="contact-item">
+                                                    HTML
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div className='eight wide column custom-left' id='no-pad1'>
+                                            <ul style={{listStyleType: "none", padding: "0px"}}>
+                                                <li className="contact-item">
+                                                    SQL
+                                                </li>
+                                                <li className="contact-item">
+                                                    CSS
+                                                </li>
+                                                <li className="contact-item">
+                                                    Bash
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div className='sixteen wide column' style={{paddingTop: "0px", paddingBottom: "0px"}}>
+                                    <hr/>
+                                    <h3 className='ui header' id="no-margin2">Tools</h3>
+                                    <div className='ui grid stackable'>
+                                        <div className='eight wide column custom-left' id='no-pad2'>
+                                            <ul style={{listStyleType: "none", padding: "0px"}}>
+                                                <li className="contact-item">
+                                                    React.js
+                                                </li>
+                                                <li className="contact-item">
+                                                    Node.js
+                                                </li>
+                                                <li className="contact-item">
+                                                    Express.js
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div className='eight wide column custom-left' id='no-pad3'>
+                                            <ul style={{listStyleType: "none", padding: "0px", marginBottom: "10px"}}>
+                                                <li className="contact-item">
+                                                    Semantic UI
+                                                </li>
+                                                <li className="contact-item">
+                                                    MongoDB
+                                                </li>
+                                                <li className="contact-item">
+                                                    Socket.io
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div className='sixteen wide column' style={{paddingTop: "0px", paddingBottom: "0px"}}>
+                                    <hr/>
+                                    <h3 className='ui header' id="no-margin3">Campus</h3>
+                                    <p style={{marginBottom: "3px"}}><strong>Fraternity President</strong> <br/>
+                                    <i>University of Washington <br/> 
+                                    Seattle, WA | 2017 - 2018</i></p>
+                                    <ul >
+                                        <li>Managed eight other executive board members</li>
+                                        <li>Oversaw $170,000 annual budget</li>
+                                        <li>Recruited 22 new members over tenure</li>
+                                    </ul>
+                                    <p><strong>Dean's List</strong> <br/>
+                                    <i>University of Washington <br/> 
+                                    Seattle, WA | 2015 - 2019</i></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div className='eleven wide column right'>
+                            <div className='ui grid'>
+                                <div className='sixteen wide column' style={{paddingTop: "0px", paddingBottom: "0px"}}>
+                                    <h3 className='ui header' id="no-margin4">Education</h3>
+                                    <p><strong>Civil Engineering, BS</strong> <br/>
+                                    <i>University of Washington | 
+                                    Seattle, WA | 2015 - 2019</i></p>
+                                </div>
+                                <div className='sixteen wide column' style={{paddingTop: "0px", paddingBottom: "0px"}}>
+                                    <hr/>
+                                    <h3 className='ui header' id="no-margin5">Experience</h3>
+                                    <p style={{marginBottom: "3px"}}><strong>Coding Boot Camp Certificate</strong> <br/> 
+                                    <i>University of Washington | 
+                                    Seattle, WA | 2021 - 2022</i></p>
+                                    <ul >
+                                        <li>Learned front end and back end technologies through a dynamic full stack curriculum</li>
+                                        <li>More info: <a href='bootcamp.uw.edu/coding/' target="_blank">bootcamp.uw.edu/coding/</a></li>
+                                    </ul>
+                                    <p><strong>Math Tutor</strong> <br/> 
+                                    <i>Mathnasium Northwest | 
+                                    Seattle, WA | 2018 - Present</i></p>
+                                    <p><strong>Server/Bartender</strong> <br/> 
+                                    <i>Hale's Ales Brewery | 
+                                    Seattle, WA | 2021</i></p>
+                                    <p style={{marginBottom: "3px"}}><strong>Project Intern</strong> <br/> 
+                                    <i>Association for Promoting Social Action | 
+                                    Bangalore, India | 2019</i></p>
+                                    <ul >
+                                        <li>Consulted with a local non-profit to develop a plan to deliver science lessons andSTEM materials to a network of Bangalore public schools in underprivilegedneighborhoods</li>
+                                        <li>Framework was then used for lessons on evaporation and forces at our team’s pilotschool</li>
+                                    </ul>
+                                    <p style={{marginBottom: "3px"}}><strong>Engineering Intern</strong> <br/> 
+                                    <i>City of Kent Engineering Department | 
+                                    Kent, WA | 2018</i></p>
+                                    <ul >
+                                        <li>Used Civil 3D and AutoCAD to advise utility projects and approve construction planspertaining to new or existing housing developments</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            
         </div>
     )
 }
+
+export default Resume
