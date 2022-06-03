@@ -5,12 +5,12 @@ const Resume = () => {
     return (
         <div className='page resume-id'>
                 <h1 className="ui header" style={{textAlign: "center"}}>Resume</h1>
-                <div className='ui grid container' style={{paddingTop: "3em", display: "flex", justifyContent: "center"}}>
+                <div className='ui grid container mb-4' style={{paddingTop: "3em", display: "flex", justifyContent: "center"}}>
                     <div className='row resume-custom-row' >
                         <div className='five wide column left' style={{borderRight: "solid lightgray 1px"}}>
                             <div className='ui grid'>
                                 
-                                <div className='sixteen wide column' style={{paddingTop: "0px", paddingBottom: "0px"}}>
+                                <div className='sixteen wide column' style={{paddingTop: "0px"}}>
                                     <h3 className='ui header' id="no-margin">Languages</h3>
                                     <div className='ui grid stackable'>
                                         <div className='eight wide column custom-left' id="no-pad">
@@ -42,7 +42,7 @@ const Resume = () => {
                                     </div>
                                 </div>
                                 <div className='sixteen wide column' style={{paddingTop: "0px", paddingBottom: "0px"}}>
-                                    <hr/>
+                                    <hr />
                                     <h3 className='ui header' id="no-margin2">Tools</h3>
                                     <div className='ui grid stackable'>
                                         <div className='eight wide column custom-left' id='no-pad2'>
