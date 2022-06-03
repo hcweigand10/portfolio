@@ -4,14 +4,6 @@ import { Link } from 'react-router-dom';
 const Navbar = () => {
     const [activePage, setActivePage] = useState("home")
 
-    const handlePageChage = (e,newpage) => {
-        e.preventDefault()
-        console.log(document.querySelector(`#${newpage}`).classList)
-        document.querySelector(`#${newpage}`).setAttribute("class", "ui item active")
-        document.querySelector(`#${activePage}`).setAttribute("class", "ui item")
-        setActivePage(newpage)
-    }
-
     return (
     // <!--Start: Nav  -->
     <div className="ui fixed borderless menu">
