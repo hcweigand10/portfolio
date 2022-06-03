@@ -10,10 +10,10 @@ const Resume = () => {
                         <div className='five wide column left' style={{borderRight: "solid lightgray 1px"}}>
                             <div className='ui grid'>
                                 
-                                <div className='sixteen wide column' style={{paddingTop: "0px"}}>
+                                <div className='sixteen wide column' style={{paddingTop: "0px", paddingBottom: "0px"}} id="no-bm">
                                     <h3 className='ui header' id="no-margin">Languages</h3>
                                     <div className='ui grid stackable'>
-                                        <div className='eight wide column custom-left' id="no-pad">
+                                        <div className='eight wide column custom-left' id="no-pad" >
                                             <ul style={{listStyleType: "none", padding: "0px"}}>
                                                 <li className="contact-item">
                                                 JavaScript 
@@ -41,11 +41,11 @@ const Resume = () => {
                                         </div>
                                     </div>
                                 </div>
-                                <div className='sixteen wide column' style={{paddingTop: "0px", paddingBottom: "0px"}}>
+                                <div className='sixteen wide column' style={{paddingTop: "0px", paddingBottom: "0px"}} id="no-bm2">
                                     <hr />
                                     <h3 className='ui header' id="no-margin2">Tools</h3>
                                     <div className='ui grid stackable'>
-                                        <div className='eight wide column custom-left' id='no-pad2'>
+                                        <div className='eight wide column custom-left'  id='no-pad2'>
                                             <ul style={{listStyleType: "none", padding: "0px"}}>
                                                 <li className="contact-item">
                                                     React.js
