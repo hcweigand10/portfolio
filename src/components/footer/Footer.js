@@ -1,5 +1,6 @@
 import React from "react"
 import { faEnvelope, faHome } from '@fortawesome/free-solid-svg-icons'
+import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons'
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import "./footer.css"
 
@@ -26,7 +27,7 @@ const Footer = () => {
                             target="_blank"
                             rel="noreferrer"
                             role="button">
-                            <i class="fab fa-linkedin-in"></i>
+                            <FontAwesomeIcon icon={faLinkedin}/>
                         </a>
                     </li>
                     <li class="ms-3">
@@ -37,7 +38,7 @@ const Footer = () => {
                             target="_blank"
                             rel="noreferrer"
                             role="button">
-                            <i class="fab fa-github"></i>
+                            <FontAwesomeIcon icon={faGithub}/>
                         </a>
                     </li>
                     <li class="ms-3">
