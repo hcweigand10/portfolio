@@ -3,14 +3,13 @@ import Home from "./pages/Home";
 import About from "./pages/About";
 import Projects from "./pages/Projects";
 import Resume from './pages/Resume'
-import Navbar from './components/Navbar'
-import Footer from './components/Footer'
+import Navbar from './components/navbar/Navbar'
+import Footer from './components/footer/Footer'
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
   return (
     <div>
-      <div className="container-main">
         <Router>
         <Navbar/>
           <Routes>
@@ -20,10 +19,7 @@ function App() {
             <Route path="/work" element={<Projects />} />
           </Routes>
         </Router>
-      </div>
-      <footer>
         <Footer/>
-      </footer>
     </div>
   );
 }
