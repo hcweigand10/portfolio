@@ -1,28 +1,23 @@
 import React from "react"
 
-const Project = ({title,projectObj,pic}) => {
+const Project = ({project}) => {
 
     return (
-        <div className="item">
-            <div className="work-wrap d-md-flex">
-                <div className="text text-left text-lg-right p-4 px-xl-5 d-flex align-items-center">
-                    <div className="desc row w-100">
-                        <div className='col-lg-4'>
-                            <h2 className="mb-4">{title}</h2>
-
-                            <div className="row">
-                                <div>
-                                    <p className="plain-text">{projectObj.description}</p>
-                                    <p className="plain-text">{projectObj.awards}</p>
-                                </div>
-                            </div>
-                            <p className='mt-4 project-buttons'>
-                                <a href={projectObj.liveUrl} target="_blank" rel="noreferrer" className="btn-1 m-2 py-3 px-4">Deployed Site</a>
-                                <a href={projectObj.github} target="_blank" rel="noreferrer" className="btn-2 m-2 py-3 px-4">Github Repo</a>
-                            </p>
-                        </div>
-                        <img className="col-lg-8" src={pic} alt={title} />
+        <div class="col">
+            <div class={project.featured ? "card shadow-lg" : "card shadow"}>
+                <img src={project.pic} style={{height: "200px"}} alt="project thumbnail"/>
+                <div class="card-body bg-light">
+                    <div style={{minHeight: "190px"}}>
+                        <h3 className="card-title">{project.title}</h3>
+                        <p class="card-text mb-4">{project.description}</p>
                     </div>
+                    <div class="d-flex align-items-center justify-content-between">
+                        <div>
+                            <a class="btn btn-1 m-2" href={project.liveUrl} target="_blank" rel="noreferrer">Live Site</a>
+                            <a class="btn btn-2 m-2" href={project.github} target="_blank" rel="noreferrer">Github Repo</a>      
+                        </div>
+                    </div>
+                    {project.featured ? <span className="justify-content-end"><p class="text-danger" style={{fontStyle: "italic", textAlign: "center", fontSize: "20px", position: "absolute", top: "-30px", left: "0", right: "0", margin: "auto",}}>Featured!</p></span> : null}
                 </div>
             </div>
         </div>

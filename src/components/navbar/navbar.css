@@ -1,5 +1,9 @@
+#override .custom-nav {
+    background-color: #4682b4;
+}
+
 #override .custom-link {
-    color: gray;
+    color: lightgray;
 }
 #override .custom-link-active {
     color: white;
@@ -19,7 +23,7 @@
 
 #override .custom-icon:hover {
     color: white;
-    /* translate: 2; */
+    translate: 2;
 }
 
 #override .custom-nav {

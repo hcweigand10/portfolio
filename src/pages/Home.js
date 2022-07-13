@@ -44,9 +44,7 @@ export default function Home() {
 
     start()
 
-    return (
-        <div>
-            
+    return (   
             <main className="container home-main page">
                 <div>
                     <h1 className='title'>Hey there, I'm <span className='name-span'>Henry Weigand</span></h1>
@@ -59,6 +57,5 @@ export default function Home() {
                 </div>
             </main>
 
-        </div>
     )
 }

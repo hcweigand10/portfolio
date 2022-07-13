@@ -9,18 +9,18 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
   return (
-    <div>
+    <>
         <Router>
         <Navbar/>
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<About />} />
             <Route path="/resume" element={<Resume />} />
-            <Route path="/work" element={<Projects />} />
+            <Route path="/projects" element={<Projects />} />
           </Routes>
         </Router>
         <Footer/>
-    </div>
+    </>
   );
 }
 
