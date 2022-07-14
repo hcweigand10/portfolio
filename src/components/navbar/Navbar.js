@@ -44,7 +44,7 @@ const Navbar = () => {
         {/* <!-- Collapsible wrapper --> */}
         <div className={(collapse) ? "navbar-collapse align-items-center pb-3" : "collapse navbar-collapse align-items-center py-2"} id="navbarSupportedContent">
           {/* <!-- Left links --> */}
-          <ul className="navbar-nav me-auto mb-md-0">
+          <ul className="navbar-nav me-auto mb-md-0 mb-1">
             <li className="nav-item">
               <Link className={(activePage==="/home") ? "nav-link custom-link-active" : "nav-link custom-link"} to="/" onClick={() => handlePageChange("/home")}>Home</Link>
             </li>
@@ -57,7 +57,7 @@ const Navbar = () => {
           </ul>
           {/* <!-- Left links --> */}
           {/* <!-- Rght links --> */}
-          <ul className="navbar-nav mb-md-0 justify-content-end d-inline" style={{fontSize: "18px"}}>
+          <ul className="navbar-nav mb-md-0 py-2 justify-content-end d-inline" style={{fontSize: "18px"}}>
               <li className="d-inline me-3 btn btn-custom" style={{backgroundColor: "#0077b5"}}>
                 <a className="text-light" href="https://www.linkedin.com/in/henryweigand/" target="_blank" rel="noreferrer"><FontAwesomeIcon icon={faLinkedin}/></a>
               </li>
