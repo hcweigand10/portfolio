@@ -9,9 +9,10 @@
   --steelblue : #4682b4;
 }
 
-/* main > .container {
-  padding: 60px 15px 0;
-} */
+#override .custom-nav {
+  background-color: var(--pink);
+  /* overflow: auto; */
+}
 
 #override footer {
   width: 100%;

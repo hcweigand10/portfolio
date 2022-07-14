@@ -1,10 +1,7 @@
-#override .custom-nav {
-    background-color: #4682b4;
-    /* overflow: auto; */
-}
-
 #override .custom-link {
     color: lightgray;
+    padding-top: 0px;
+    padding-bottom: 7px;
 }
 #override .custom-link-active {
     color: white;
@@ -12,6 +9,26 @@
 #override .custom-link:hover {
     /* background-color: gray; */
     color: white;
+}
+
+#override .btn-custom {
+    color: lightgray;
+}
+
+#override .btn-custom:hover {
+    /* background-color: gray; */
+    color: white;
+}
+
+#override .btn-custom {
+    color: white;
+    opacity: 0.9;
+    /* box-shadow: 0px 0px 2px 0px lightgray; */
+}
+
+#override .btn-custom:hover {
+    opacity: 1;
+    box-shadow: 0px 0px 2px 2px lightgray;
 }
 
 #override .insta {

@@ -51,7 +51,7 @@ export default function Home() {
                     <h4 className='subtitle'>Full-Stack Developer</h4>
                 </div>
                 
-                <div className='facts' style={{height: "200px"}}>
+                <div className='facts' style={{height: "160px"}}>
                     <h5 className='fact'>{fact}</h5>
                     <h6 className='source'>- API Ninjas</h6>
                 </div>

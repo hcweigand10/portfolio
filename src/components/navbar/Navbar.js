@@ -38,13 +38,13 @@ const Navbar = () => {
           <i className="fas fa-bars"></i>
         </button>
           {/* <!-- Navbar brand --> */}
-          <Link className="navbar-brand mt-lg-0 p-2" to="/" onClick={() => handlePageChange("/home")}>
+          <Link className="navbar-brand mt-md-0 p-2" to="/" onClick={() => handlePageChange("/home")}>
             Henry Weigand
           </Link>
         {/* <!-- Collapsible wrapper --> */}
-        <div className={(collapse) ? "navbar-collapse" : "collapse navbar-collapse"} id="navbarSupportedContent">
+        <div className={(collapse) ? "navbar-collapse align-items-center pb-3" : "collapse navbar-collapse align-items-center py-2"} id="navbarSupportedContent">
           {/* <!-- Left links --> */}
-          <ul className="navbar-nav me-auto mb-2 mb-lg-0">
+          <ul className="navbar-nav me-auto mb-md-0">
             <li className="nav-item">
               <Link className={(activePage==="/home") ? "nav-link custom-link-active" : "nav-link custom-link"} to="/" onClick={() => handlePageChange("/home")}>Home</Link>
             </li>
@@ -57,12 +57,16 @@ const Navbar = () => {
           </ul>
           {/* <!-- Left links --> */}
           {/* <!-- Rght links --> */}
-          <ul className="navbar-nav mb-2 mb-lg-0 justify-content-end" style={{fontSize: "18px"}}>
-            <li>
-              <a className="custom-link me-3" href="https://www.linkedin.com/in/henryweigand/" target="_blank" rel="noreferrer"><FontAwesomeIcon icon={faLinkedin}/></a>
-              <a className="custom-link me-3" href="https://github.com/hcweigand10" target="_blank" rel="noreferrer"><FontAwesomeIcon icon={faGithub}/></a>
-              <a className="custom-link me-3" href="mailto:henryweigand10@gmail.com" target="_blank" rel="noreferrer"><FontAwesomeIcon icon={faEnvelope}/></a>
-            </li>
+          <ul className="navbar-nav mb-md-0 justify-content-end d-inline" style={{fontSize: "18px"}}>
+              <li className="d-inline me-3 btn btn-custom" style={{backgroundColor: "#0077b5"}}>
+                <a className="text-light" href="https://www.linkedin.com/in/henryweigand/" target="_blank" rel="noreferrer"><FontAwesomeIcon icon={faLinkedin}/></a>
+              </li>
+              <li className="d-inline me-3 btn btn-custom" style={{backgroundColor: "black"}}>
+                <a className="text-light" href="https://github.com/hcweigand10" target="_blank" rel="noreferrer"><FontAwesomeIcon icon={faGithub}/></a>
+              </li>
+              <li className="d-inline me-3 btn btn-custom" style={{backgroundColor: "red"}}>
+                <a className="text-light" href="mailto:henryweigand10@gmail.com" target="_blank" rel="noreferrer"><FontAwesomeIcon icon={faEnvelope}/></a>
+              </li>
           </ul>
           {/* <!-- Rght links --> */}
         </div>
