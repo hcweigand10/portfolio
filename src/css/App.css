@@ -9,9 +9,9 @@
   --steelblue : #4682b4;
 }
 
-main > .container {
+/* main > .container {
   padding: 60px 15px 0;
-}
+} */
 
 #override footer {
   width: 100%;
@@ -29,11 +29,6 @@ p {
 
 
 /* home styling  */
-.home-main {
-  padding-top: 30vh;
-  text-align: center;
-}
-
 .title {
   color: var(--dark);
 }
@@ -54,18 +49,6 @@ p {
 .fact {
   color: var(--darkgrey);
 }
-
-.source {
-  font-style: italic;
-}
-
-
-/* about styling */
-.about-page {
-  background-color: var(--light);
-  padding-bottom: 40px;
-}
-
 
 /* projects styling  */
 #override .btn-1 {
@@ -98,9 +81,3 @@ p {
 .project-buttons {
   display: flex;
 }
-
-.react-pdf__Page__canvas {
-  /* margin-left: auto; */
-  margin: 0;
-}
-

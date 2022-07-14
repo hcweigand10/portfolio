@@ -16,14 +16,15 @@ const Navbar = () => {
   }
 
   const handleCollapse = () => {
+    console.log("collapse", collapse)
     setCollapse(!collapse)
   }
 
   return (
     // <!-- Navbar -->
-    <nav className="navbar navbar-expand-lg navbar-dark p-0 custom-nav">
+    <nav className="navbar navbar-expand-md navbar-dark p-0 bg-dark" >
       {/* <!-- Container wrapper --> */} 
-      <div className="container-fluid">
+      <div className="container-fluid custom-nav">
         <button
           className="navbar-toggler"
           type="button"
@@ -57,14 +58,10 @@ const Navbar = () => {
           {/* <!-- Left links --> */}
           {/* <!-- Rght links --> */}
           <ul className="navbar-nav mb-2 mb-lg-0 justify-content-end" style={{fontSize: "18px"}}>
-            <li className="nav-item mx-3">
-              <a className="custom-link" href="https://www.linkedin.com/in/henryweigand/" target="_blank" rel="noreferrer"><FontAwesomeIcon icon={faLinkedin}/></a>
-            </li>
-            <li className="nav-item mx-3">
-              <a className="custom-link" href="https://github.com/hcweigand10" target="_blank" rel="noreferrer"><FontAwesomeIcon icon={faGithub}/></a>
-            </li>
-            <li className="nav-item mx-3">
-              <a className="custom-link" href="mailto:henryweigand10@gmail.com" target="_blank" rel="noreferrer"><FontAwesomeIcon icon={faEnvelope}/></a>
+            <li>
+              <a className="custom-link me-3" href="https://www.linkedin.com/in/henryweigand/" target="_blank" rel="noreferrer"><FontAwesomeIcon icon={faLinkedin}/></a>
+              <a className="custom-link me-3" href="https://github.com/hcweigand10" target="_blank" rel="noreferrer"><FontAwesomeIcon icon={faGithub}/></a>
+              <a className="custom-link me-3" href="mailto:henryweigand10@gmail.com" target="_blank" rel="noreferrer"><FontAwesomeIcon icon={faEnvelope}/></a>
             </li>
           </ul>
           {/* <!-- Rght links --> */}

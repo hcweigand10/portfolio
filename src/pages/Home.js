@@ -45,13 +45,13 @@ export default function Home() {
     start()
 
     return (   
-            <main className="container home-main page">
-                <div>
+            <main className="container home-main page text-center">
+                <div className='text-center' style={{marginTop: "15vh"}}>
                     <h1 className='title'>Hey there, I'm <span className='name-span'>Henry Weigand</span></h1>
                     <h4 className='subtitle'>Full-Stack Developer</h4>
                 </div>
                 
-                <div className='facts'>
+                <div className='facts' style={{height: "200px"}}>
                     <h5 className='fact'>{fact}</h5>
                     <h6 className='source'>- API Ninjas</h6>
                 </div>
