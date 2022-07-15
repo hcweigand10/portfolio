@@ -1,4 +1,5 @@
 import React from "react"
+import { faEnvelope, faPhone, faHome } from '@fortawesome/free-solid-svg-icons'
 import "./footer.css"
 
 
@@ -67,9 +68,9 @@ const Footer = () => {
                     Contact
                     </h4>
                     <ul class="text-center list-unstyled align-items-center">
-                        <li><p><i class="fas fa-home pr-2"></i> Seattle, WA, US</p></li>
-                        <li><p><i class="fas fa-envelope pr-2"></i> henryweigand10@gmail.com</p></li>
-                        <li><p><i class="fas fa-phone pr-2"></i> +1 206-349-9260</p></li>
+                        <li><p><FontAwesomeIcon icon={faHome}/> Seattle, WA, US</p></li>
+                        <li><p><FontAwesomeIcon icon={faEnvelope}/> henryweigand10@gmail.com</p></li>
+                        <li><p><FontAwesomeIcon icon={faPhone}/> +1 206-349-9260</p></li>
                     </ul>
                 </div>
                 {/* <!-- Grid column --> */}
