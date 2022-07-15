@@ -14,16 +14,6 @@
   /* overflow: auto; */
 }
 
-#override footer {
-  width: 100%;
-  background-color: var(--darkgrey);
-  color: var(--lightgrey);
-}
-
-#override footer span {
-  color: var(--lightgrey);
-}
-
 p {
   font-size: 14px;
 }

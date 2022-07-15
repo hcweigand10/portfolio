@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Link  } from 'react-router-dom';
-import { faEnvelope } from '@fortawesome/free-solid-svg-icons'
+import { faEnvelope, faBars } from '@fortawesome/free-solid-svg-icons'
 import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons'
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import "./navbar.css"
@@ -35,10 +35,10 @@ const Navbar = () => {
           aria-label="Toggle navigation"
           onClick={handleCollapse}
         >
-          <i className="fas fa-bars"></i>
+          <FontAwesomeIcon icon={faBars}/>
         </button>
           {/* <!-- Navbar brand --> */}
-          <Link className="navbar-brand mt-md-0 p-2" to="/" onClick={() => handlePageChange("/home")}>
+          <Link className="navbar-brand mt-md-0 p-2" to="/" onClick={() => handlePageChange("/")}>
             Henry Weigand
           </Link>
         {/* <!-- Collapsible wrapper --> */}
@@ -46,7 +46,7 @@ const Navbar = () => {
           {/* <!-- Left links --> */}
           <ul className="navbar-nav me-auto mb-md-0 mb-1">
             <li className="nav-item">
-              <Link className={(activePage==="/home") ? "nav-link custom-link-active" : "nav-link custom-link"} to="/" onClick={() => handlePageChange("/home")}>Home</Link>
+              <Link className={(activePage==="/") ? "nav-link custom-link-active" : "nav-link custom-link"} to="/" onClick={() => handlePageChange("/")}>Home</Link>
             </li>
             <li className="nav-item">
               <Link className={(activePage==="/about") ? "nav-link custom-link-active" : "nav-link custom-link"} to="/about" onClick={() => handlePageChange("/about")}>About</Link>

@@ -1,11 +1,10 @@
 import React from "react"
 import { faEnvelope, faPhone, faHome } from '@fortawesome/free-solid-svg-icons'
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import "./footer.css"
 
 
 const Footer = () => {
-
-
 
     return (
         
