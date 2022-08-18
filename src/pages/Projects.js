@@ -3,7 +3,7 @@ import BrowserPic from "../assets/images/Browser.png"
 import SkyfallPic from "../assets/images/Skyfall1.png"
 import GeoQuizzrPic from "../assets/images/GeoQuizzrPic.png"
 import FakeYoutubePic from "../assets/images/fakeYoutube.png"
-import DoschRealty from "../assets/images/dosch-realty.png"
+import DoschRealty from "../assets/images/brad-dosch.png"
 import Project from "../components/Project"
 
 export default function Projects() {
