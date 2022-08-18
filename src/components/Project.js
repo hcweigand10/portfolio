@@ -10,6 +10,11 @@ const Project = ({project}) => {
                     <div style={{minHeight: "190px"}}>
                         <h3 className="card-title">{project.title}</h3>
                         <p class="card-text mb-4">{project.description}</p>
+                        {project.awards ? (
+                            <p class="card-text mb-4" style={{fontStyle: "italic"}}>Awards: {project.awards}</p>
+                        ) : (
+                            null
+                        )}
                     </div>
                     <div class="d-flex align-items-center justify-content-between">
                         <div>

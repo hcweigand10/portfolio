@@ -3,6 +3,7 @@ import BrowserPic from "../assets/images/Browser.png"
 import SkyfallPic from "../assets/images/Skyfall1.png"
 import GeoQuizzrPic from "../assets/images/GeoQuizzrPic.png"
 import FakeYoutubePic from "../assets/images/fakeYoutube.png"
+import DoschRealty from "../assets/images/dosch-realty.png"
 import Project from "../components/Project"
 
 export default function Projects() {
@@ -11,7 +12,7 @@ export default function Projects() {
         BrowserParty: {
             title: "Browser Party",
             description: "Browser Party is fully browser-based multiplayer party game platform that allows users to compete and chat with each other in real time using socket.io and React. This project was an absolute joy to make and I look forward to making more and more accessible games over the years to come.",
-            awards: "Awards: Best Functionality",
+            awards: "Best Functionality",
             liveUrl: "https://browser-party.herokuapp.com/",
             github: "https://github.com/kingnolds/Browser-Party",
             featured:  true,
@@ -20,7 +21,7 @@ export default function Projects() {
         Skyfall: {
             title: "Skyfall Travel",
             description: "Skyfall Travel was my first full-stack application. It utilizes a MYSQL database to enable users to plan, and save future trips to their account, including things like stops, dates, and budget breakdowns.",
-            awards: "Awards: Best Overall and Best Functionality",
+            awards: "Best Overall and Best Functionality",
             liveUrl: "https://skyfall-travel.herokuapp.com/",
             github: "https://github.com/hcweigand10/SkyFall-Travel",
             featured: false,
@@ -28,12 +29,12 @@ export default function Projects() {
         },
         DoschRealty: {
             title: "Dosch Realty",
-            description: "React Website built for Bradley Dosch, a Seattle-based realtor. The site featues an elegant design and built in content manager for Brad to easily add and update blog posts.",
+            description: "React Website built for Bradley Dosch, a Seattle-based realtor. The site featues an elegant design, built in content manager for Brad to easily add and update blog posts, and connected sql database for storing and accessing blogs and testimonials written by former clients",
             awards: "",
-            liveUrl: "https://profound-lollipop-4eb9d0.netlify.app/",
+            liveUrl: "https://main--profound-lollipop-4eb9d0.netlify.app/",
             github: "https://github.com/hcweigand10/fake-youtube",
             featured: false,
-            pic: FakeYoutubePic
+            pic: DoschRealty
         },
         FakeYoutube: {
             title: "Fake Youtube",
@@ -65,21 +66,23 @@ export default function Projects() {
     }
     
     return (
-        <main className='my-4 mx-5 d-flex justify-content-center'>
-
-            <div class="album py-5 col-xxl-10 col-xl-11">
-                <div class="">
-                    <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-5">
-                        <Project project={projects.BrowserParty}/>
-                        <Project project={projects.Skyfall}/>
-                        <Project project={projects.DoschRealty}/>
-                        <Project project={projects.FakeYoutube}/>
-                        <Project project={projects.eCommerce}/>
-                        <Project project={projects.GeoQuizzr}/>
+        <div>
+            <h2 className='mt-5 mb-2 text-center'>Projects</h2>
+            <div className='my-4 mx-5 d-flex justify-content-center'>
+                <div class="album py-3 col-xxl-10 col-xl-11">
+                    <div class="">
+                        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-5">
+                            <Project project={projects.BrowserParty}/>
+                            <Project project={projects.Skyfall}/>
+                            <Project project={projects.DoschRealty}/>
+                            <Project project={projects.FakeYoutube}/>
+                            <Project project={projects.eCommerce}/>
+                            <Project project={projects.GeoQuizzr}/>
+                        </div>
                     </div>
                 </div>
             </div>
-        </main>
+        </div>
     )
 }
 
