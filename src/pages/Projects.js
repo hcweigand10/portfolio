@@ -1,24 +1,33 @@
 import React from 'react'
 import BrowserPic from "../assets/images/Browser.png"
 import SkyfallPic from "../assets/images/Skyfall1.png"
-import GeoQuizzrPic from "../assets/images/GeoQuizzrPic.png"
+// import GeoQuizzrPic from "../assets/images/GeoQuizzrPic.png"
 import FakeYoutubePic from "../assets/images/fakeYoutube.png"
 import DoschRealty from "../assets/images/brad-dosch.png"
 import Project from "../components/Project"
 
 export default function Projects() {
     
-    const projects = {
-        BrowserParty: {
+    const projects = [
+        {
+            title: "Dosch Realty",
+            description: "React Website built for Bradley Dosch, a Seattle-based realtor. The site featues an elegant design, built in content manager for Brad to easily add and update blog posts, and connected sql database for storing and accessing blogs and testimonials written by former clients",
+            awards: "",
+            liveUrl: "https://profound-lollipop-4eb9d0.netlify.app/",
+            github: "https://github.com/hcweigand10/fake-youtube",
+            featured: true,
+            pic: DoschRealty
+        },
+        {
             title: "Browser Party",
-            description: "Browser Party is fully browser-based multiplayer party game platform that allows users to compete and chat with each other in real time using socket.io and React. This project was an absolute joy to make and I look forward to making more and more accessible games over the years to come.",
+            description: "Browser Party is fully browser-based multiplayer party game that allows users to compete and chat with each other in real time using socket.io and React. This project was an absolute joy to make and I look forward to making more accessible games in the future.",
             awards: "Best Functionality",
             liveUrl: "https://browser-party.herokuapp.com/",
             github: "https://github.com/kingnolds/Browser-Party",
-            featured:  true,
+            featured:  false,
             pic: BrowserPic
         },
-        Skyfall: {
+        {
             title: "Skyfall Travel",
             description: "Skyfall Travel was my first full-stack application. It utilizes a MYSQL database to enable users to plan, and save future trips to their account, including things like stops, dates, and budget breakdowns.",
             awards: "Best Overall and Best Functionality",
@@ -27,16 +36,7 @@ export default function Projects() {
             featured: false,
             pic: SkyfallPic
         },
-        DoschRealty: {
-            title: "Dosch Realty",
-            description: "React Website built for Bradley Dosch, a Seattle-based realtor. The site featues an elegant design, built in content manager for Brad to easily add and update blog posts, and connected sql database for storing and accessing blogs and testimonials written by former clients",
-            awards: "",
-            liveUrl: "https://main--profound-lollipop-4eb9d0.netlify.app/",
-            github: "https://github.com/hcweigand10/fake-youtube",
-            featured: false,
-            pic: DoschRealty
-        },
-        FakeYoutube: {
+        {
             title: "Fake Youtube",
             description: "I made this 'fake youtube' site using Youtube's open API, react class and function based components, and semantic UI styling.",
             awards: "",
@@ -45,7 +45,7 @@ export default function Projects() {
             featured: false,
             pic: FakeYoutubePic
         },
-        eCommerce: {
+        {
             title: "eCommerce Backend",
             description: "This project was an exercise in setting up a backend for a potential eCommerce sight. I used MYSQL and an MVC architectural structure to enable fast and effortless database management",
             awards: "",
@@ -54,35 +54,55 @@ export default function Projects() {
             featured: false,
             pic: "https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fcdn.business2community.com%2Fwp-content%2Fuploads%2F2015%2F05%2Fecommerce.png&f=1&nofb=1"
         },
-        GeoQuizzr: {
-            title: "GeoQuizzr",
-            description: "GeoQuizzr is a simple geography trivia site that will test you with needlessly difficult questions about our world's borders. This was my first coding project that I felt proud of!",
-            awards: "",
-            liveUrl: "https://hcweigand10.github.io/Geoquizzr/",
-            github: "https://github.com/hcweigand10/Geoquizzr",
-            featured: false,
-            pic: GeoQuizzrPic
-        },
-    }
+        // {
+        //     title: "GeoQuizzr",
+        //     description: "GeoQuizzr is a simple geography trivia site that will test you with needlessly difficult questions about our world's borders. This was my first coding project that I felt proud of!",
+        //     awards: "",
+        //     liveUrl: "https://hcweigand10.github.io/Geoquizzr/",
+        //     github: "https://github.com/hcweigand10/Geoquizzr",
+        //     featured: false,
+        //     pic: GeoQuizzrPic
+        // },
+    ]
+
+    const nonFeatured = projects.filter(project => !project.featured).map(project => <Project project={project}/>)
     
     return (
-        <div>
-            <h2 className='mt-5 mb-2 text-center'>Projects</h2>
-            <div className='my-4 mx-5 d-flex justify-content-center'>
-                <div class="album py-3 col-xxl-10 col-xl-11">
-                    <div class="">
-                        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-5">
-                            <Project project={projects.BrowserParty}/>
-                            <Project project={projects.Skyfall}/>
-                            <Project project={projects.DoschRealty}/>
-                            <Project project={projects.FakeYoutube}/>
-                            <Project project={projects.eCommerce}/>
-                            <Project project={projects.GeoQuizzr}/>
-                        </div>
-                    </div>
-                </div>
+        // <div>
+        //     <h2 className='mt-5 mb-5 text-center'>Projects</h2>
+        //     <div className='my-4 mx-5 d-flex justify-content-center'>
+        //         <div class="album py-3 col-xxl-10 col-xl-11">
+        //             <div class="">
+        //                 <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-5">
+        //                     <Project project={projects.BrowserParty}/>
+        //                     <Project project={projects.DoschRealty}/>
+        //                     <Project project={projects.Skyfall}/>
+        //                     <Project project={projects.FakeYoutube}/>
+        //                     <Project project={projects.eCommerce}/>
+        //                     <Project project={projects.GeoQuizzr}/>
+        //                 </div>
+        //             </div>
+        //         </div>
+        //     </div>
+        // </div>
+        <div className="container mt-5 bg-light">
+      <div className="row">
+        <div className="col-md-3 mb-5">
+          <h2>Checkout my work!</h2>
+          <p className='text-muted'>
+            I'll keep my favorite projects near the top of this list, and will continue to update them over time
+          </p>
+        </div>
+        <div className="col-md-9">
+            <div className="row">
+              <h3 className='mb-3'>Featured</h3>
+              <Project project={projects[0]} />
+              <h3 className='my-3'>More Projects</h3>
+              {nonFeatured}
             </div>
         </div>
+      </div>
+    </div>
     )
 }
 
