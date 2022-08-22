@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { faEnvelope, faBars } from "@fortawesome/free-solid-svg-icons";
 import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
@@ -10,6 +10,11 @@ const Navbar = () => {
     const [activePage, setActivePage] = useState(window.location.pathname);
     const [collapse, setCollapse] = useState(true);
 
+    useEffect(() => {
+      console.log(window.location.pathname)
+      setActivePage(window.location.pathname)
+    }, [])
+    
     
     const handlePageChange = (page) => {
       setActivePage(page);

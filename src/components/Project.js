@@ -13,7 +13,7 @@ const Project = ({ project }) => {
               <img
                 src={project.pic}
                 alt="project thumbnail"
-                style={{ maxWidth: "100%", height: "100%", objectFit: "cover" }}
+                style={{ maxWidth: "100%", objectFit: "cover" }}
               />
             </div>
             <div className="col-md-5 my-auto">
