@@ -72,7 +72,7 @@ const Navbar = () => {
                 <MDBCollapse
                     className="navbar-collapse align-items-center my-3"
                     id="navbarSupportedContent"
-                    show={collapse}
+                    show={!collapse}
                 >
                     {/* <!-- Left links --> */}
                     <ul className="navbar-nav me-auto mb-md-0 mb-1" style={{fontSize: "medium"}}>
