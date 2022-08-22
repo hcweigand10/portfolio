@@ -45,5 +45,20 @@
 }
 
 #override .custom-nav {
-    min-height: 50px;
+    /* min-height: 52px; */
+    position: fixed;
+    top: 0;
+    z-index: 100;
+}
+
+#override #navbarSupportedContent {
+    transition: all 0.35s ease;
+}
+
+#override .collapsing {
+    height: 0;
+}
+
+#override .opening {
+    height: auto
 }

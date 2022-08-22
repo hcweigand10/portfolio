@@ -5,13 +5,13 @@ import profPic from '../assets/images/zoomedProfpic.png'
 export default function About() {
     return (
 
-        <div className='container'>
-            <section className="px-5 pt-0 pb-2" key="about-me">
+        <div className='container mt-4'>
+            <section className="px-4 pt-0 pb-2" key="about-me">
                  <div className="row g-5 my-3">
                     <div className="col-md-4">
                         <img src={profPic} className="img-fluid p-2" alt="profile-pic" style={{borderRadius: "50%"}}/>
                     </div>
-                    <div className="col-md-8 col-sm-12 card p-3 shadow-lg">
+                    <div className="col-md-8 card p-3 shadow-sm">
                         <div className='card-title text-center'>
                             <h2 className='title'>About Me</h2>
                         </div>

@@ -69,6 +69,30 @@ p {
   transition: 0.5s;
 }
 
-.project-buttons {
+#override .project-buttons {
   display: flex;
+}
+
+#override #projects-content {
+  margin-top: 0px;
+}
+
+@media screen and (min-width: 426px) {
+  #override #projects-content {
+    margin-top: 60px;
+  }
+}
+
+#override .projects-sidebar {
+  margin-top: 60px;
+}
+
+@media screen and (min-width: 426px) {
+  #override .projects-sidebar {
+    margin-top: 100px;
+    position: fixed; 
+    top: 52px; 
+    bottom: 0; 
+    left: 0; 
+  }
 }
