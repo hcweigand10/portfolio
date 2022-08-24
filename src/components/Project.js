@@ -5,15 +5,15 @@ const Project = ({ project }) => {
     return (
       <div className="col mb-4">
         <div
-          className="card project-card shadow h-100"
-          style={{ minHeight: "300px" }}
+          className="card project-card h-100"
+          style={{ minHeight: "250px" }}
         >
           <div className="row h-100">
             <div className="col-md-7">
               <img
                 src={project.pic}
                 alt="project thumbnail"
-                style={{ maxWidth: "100%", objectFit: "cover" }}
+                style={{ width: "100%", height:"100%", objectFit: "cover" }}
               />
             </div>
             <div className="col-md-5 my-auto">
@@ -58,14 +58,14 @@ const Project = ({ project }) => {
     );
   } else {
     return (
-      <div class="col-md-6">
-        <div class="card shadow my-3">
+      <div class="col-md-6 col-lg-4">
+        <div class="card my-3">
           <img
             src={project.pic}
-            style={{ height: "200px" }}
+            style={{ height: "200px", width: "100%", objectFit: "cover" }}
             alt="project thumbnail"
           />
-          <div class="card-body bg-light">
+          <div class="card-body">
             <div style={{ minHeight: "190px" }}>
               <h3 className="card-title">{project.title}</h3>
               <p class="card-text mb-4 text-muted">{project.description}</p>
