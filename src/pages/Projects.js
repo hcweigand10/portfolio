@@ -74,9 +74,9 @@ export default function Projects() {
         .map((project, index) => <Project project={project} key={index}/>);
 
     return (
-        <div>
-            <header
-                className="sidebar projects-sidebar text-center d-block pb-4 col-md-3"
+        <div className="row">
+            <div
+                className="projects-sidebar text-center pb-4 col-md-3"
                 style={{}}
             >
                 <div
@@ -89,9 +89,9 @@ export default function Projects() {
                         list, and will continue to update them over time
                     </p>
                 </div>
-            </header>
-            <main
-                className="container bg-light col-md-9 me-0 pt-2"
+            </div>
+            <div
+                className="container bg-light col-md-9 p-4"
                 id="projects-content"
             >
                 <div className="main mx-auto">
@@ -105,7 +105,7 @@ export default function Projects() {
                         <div className="row">{nonFeatured}</div>
                     </div>
                 </div>
-            </main>
+            </div>
         </div>
     );
 }

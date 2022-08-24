@@ -77,17 +77,17 @@ p {
   margin-top: 0px;
 }
 
-@media screen and (min-width: 426px) {
+@media screen and (min-width: 768px) {
   #override #projects-content {
     margin-top: 60px;
   }
 }
 
 #override .projects-sidebar {
-  margin-top: 60px;
+  margin-top: 80px;
 }
 
-@media screen and (min-width: 426px) {
+/* @media screen and (min-width: 768px) {
   #override .projects-sidebar {
     margin-top: 100px;
     position: fixed; 
@@ -95,4 +95,4 @@ p {
     bottom: 0; 
     left: 0; 
   }
-}
+} */
